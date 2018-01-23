@@ -1,0 +1,7 @@
+C:\Users\Daria\Documents\C#\Practice\TaskEleven\TaskEleven\bin\Debug\TaskEleven.exe.config
+C:\Users\Daria\Documents\C#\Practice\TaskEleven\TaskEleven\bin\Debug\TaskEleven.exe
+C:\Users\Daria\Documents\C#\Practice\TaskEleven\TaskEleven\bin\Debug\TaskEleven.pdb
+C:\Users\Daria\Documents\C#\Practice\TaskEleven\TaskEleven\obj\Debug\TaskEleven.csprojResolveAssemblyReference.cache
+C:\Users\Daria\Documents\C#\Practice\TaskEleven\TaskEleven\obj\Debug\TaskEleven.csproj.CoreCompileInputs.cache
+C:\Users\Daria\Documents\C#\Practice\TaskEleven\TaskEleven\obj\Debug\TaskEleven.exe
+C:\Users\Daria\Documents\C#\Practice\TaskEleven\TaskEleven\obj\Debug\TaskEleven.pdb
