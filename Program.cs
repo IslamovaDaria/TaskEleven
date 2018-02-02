@@ -21,7 +21,7 @@ namespace TaskEleven
                 }
                 catch (FormatException)
                 {
-                    Console.WriteLine("Ошибка ввода. Ожидалось целое число.");
+                    Console.WriteLine("Ошибка ввода. Ожидалось натуральное число.");
                     OK = false;
                 }
             } while (!OK);
@@ -58,6 +58,7 @@ namespace TaskEleven
             int reverse = 0;
             int choiсe;
             bool OK = true;
+            int shift;
             string menu = "Что вы хотите сделать?\n1.Зашифровать текст.\n2.Расшифровать текст.";
             Console.WriteLine(menu);
             do
@@ -74,7 +75,14 @@ namespace TaskEleven
             Console.WriteLine("Введите текст на русском языке строчными буквами:");
             string message = Console.ReadLine();
             Console.WriteLine("Введите ключ к шифру:");
-            int shift = ReadInt();
+            {
+                shift = ReadInt();
+                if (shift <= 0)
+                {
+                    Console.WriteLine("Ошибка ввода. Ожидалось натуральное число.");
+                    OK = false;
+                }
+            } while (!OK) ;
             char[] arr = Cryptographer(message, shift * reverse);
             for (int i = 0; i < arr.Length; i++)
                 Console.Write(arr[i]);
