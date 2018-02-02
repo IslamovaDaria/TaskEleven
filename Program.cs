@@ -31,7 +31,6 @@ namespace TaskEleven
         static char[] Cryptographer(string message, int shift)
         {
             char[] alphabet = { 'а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ъ', 'ы', 'ь', 'э', 'ю', 'я' };
-            Console.WriteLine(message);
             char[] arr = new char[message.Length];
 
             for (int i = 0; i < message.Length; i++)
@@ -44,14 +43,11 @@ namespace TaskEleven
                         index = j;
                     }
 
-                Console.WriteLine(index);
-
                 if (index > -1)
                 {
                     if (index + shift < 0) index = alphabet.Length + ((index + shift) % alphabet.Length);
                     else index = (index + shift) % alphabet.Length;
                     arr[i] = alphabet[index];
-                    Console.WriteLine(arr[i]);
                 }
             }          
             return arr;
